@@ -12,5 +12,7 @@ router.get('/about', function(req, res, next) {
      hobbies: ['golf','fishing','biking']
      });
 });
-
+router.get('/company', function(req, res, next) {
+  res.render('company', { title: 'Todo App' });
+});
 module.exports = router;
